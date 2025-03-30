@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?galaxy') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #2c2f33;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            width: 350px;
+        }
+        .login-container h2 {
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        .btn {
+            background: #5865F2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #4752c4;
+        }
+        .qr-code {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome back!</h2>
+        <p>We're so excited to see you again!</p>
+        <input type="text" placeholder="Email or Phone Number">
+        <input type="password" placeholder="Password">
+        <button class="btn">Log In</button>
+        <p><a href="#" style="color: #7289da;">Forgot your password?</a></p>
+        <div class="qr-code">
+            <p>Log in with QR Code</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=discord.com" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
